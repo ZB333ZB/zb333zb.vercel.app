@@ -9,24 +9,27 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&family=Roboto+Mono:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet"> 
 
-        <link rel="shortcut icon" href="this.images/favicon.ico" type="image/x-icon"> <!-- adding icon to tab --> 
+        <!-- Font Awesome icons -->
+        <script src="https://kit.fontawesome.com/d704cf03f8.js" crossorigin="anonymous"></script>
+
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> <!-- adding icon to tab --> 
         <link rel="stylesheet" href="styles.css">
         <meta name="description" content="Here you can find all the works of @AlexBerz since the beginning of his coding journey">
         <title>@AlexBerz's Portfolio Page</title>
     </head>
     <body>
         <header id="header">
-            <img src="this.images/favicon.png" alt="Icon" loading="lazy" id="header-icon">
-            <nav id="navbar">
+            <!-- <img src="images/favicon.png" alt="Icon" loading="lazy" id="header-icon"> -->
+            <nav id="navbar" role="menu">
                 <ul id="navbar-links">
                     <li>
-                        <a class="navbar-link underline-hover-effect" href="#welcome-section">About</a>
+                        <a class="navbar-link underline-hover-effect" href="#welcome-section" role="menuitem">About</a>
                     </li>
                     <li>
-                        <a class="navbar-link underline-hover-effect" href="#projects">My Projects</a>
+                        <a class="navbar-link underline-hover-effect" href="#projects" role="menuitem">My Projects</a>
                     </li>
                     <li>
-                        <a class="navbar-link underline-hover-effect" href="Contact">Contact</a>
+                        <a class="navbar-link underline-hover-effect" href="#contact" role="menuitem">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -34,29 +37,63 @@
         <main id="main">
             <section id="welcome-section">
                 <h1 id="title">@AlexBerz</h1>
-                <h2 id="subtitle">Just interested in coding</h2>
+                <h2 id="subtitle">Interested in coding</h2>
             </section>
-            <section id="project-tiles">
-                <div class="project-tile"> <!-- at least one -->
-                    <a href=""></a> <!-- link to the project -->
-                    <h3 class="project-name"></h3>
-                </div>
-            </section>
+            <div id="content-wrapper">
+                <section id="projects">
+                    <div class="heading">
+                        <h2>My Projects</h2>
+                    </div>
+                    <div id="project-tiles">
+                        <a class="project-tile" href="https://codepen.io/AlexBerz/pen/VwdeGvr" target="_blank">
+                            <div class="misc">
+                                <p class="publish-date">1 NOV 2022</p>
+                            </div>
+                            <img class="project-image" src="images/survey_form_preview.png" alt="Survey Form Project" loading="lazy">
+                            <h3 class="project-name">Survey Form</h3>
+                        </a>
+                        <a href="https://codepen.io/AlexBerz/pen/xxzZaqd" class="project-tile" target="_blank">
+                            <div class="misc">
+                                <p class="publish-date">1 NOV 2022</p>
+                            </div>
+                            <img class="project-image" src="images/tribute_page_preview.png" alt="Tribute Page Project" loading="lazy">
+                            <h3 class="project-name">Tribute Page</h3>
+                        </a>
+                        <a class="project-tile" href="https://codepen.io/AlexBerz/pen/XWYXOWe" target="_blank">
+                            <div class="misc">
+                                <p class="publish-date">1 NOV 2022</p>
+                            </div>
+                            <img src="images/technical_documentation_preview.png" alt="Technical Documentation Project" class="project-image" loading="lazy">
+                            <h3 class="project-name">Technical Documentation</h3>
+                        </a>
+                        <a class="project-tile" href="https://codepen.io/AlexBerz/pen/QWxyYbE">
+                            <div class="misc">
+                                <p class="publish-date">1 NOV 2022</p>
+                            </div>
+                            <img src="images/landing_page_preview.png" alt="Landing Page Project" class="project-image" loading="lazy">
+                            <h3 class="project-name">Landing Page</h3>
+                        </a>
+                    </div>
+                </section>
+                <section id="contact">
+                    <h2 class="heading">How to reach me</h2>
+                    <div id="socials">
+                        <div class="social">
+                            <a href="hotelangebote_darlinghurst@simplelogin.com" target="_blank" rel="noopener"><i class="fa-regular fa-envelope"></i>Email</a>
+                        </div>
+                        <div class="social">
+                            <a href="https://github.com/AlxBz" id="profile-link" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>Github</a>
+                        </div>
+                        <div class="social">
+                            <a href="https://t.me/alexberz" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i>Telegram</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
         <footer id="footer">
-            <div id="contact">
-                <div class="social">
-                    <div class="social-icon"></div>
-                    <div class="social-link"></div>
-                </div>
-                <div class="social">
-                    <div class="social-icon"></div>
-                    <div class="social-link"></div>
-                </div>
-                <div class="social">
-                    <div class="social-icon"></div>
-                    <div class="social-link"></div>
-                </div>
+            <div id="copyright">
+                <p>@AlexBerz © 2022</p>
             </div>
         </footer>
     </body>
