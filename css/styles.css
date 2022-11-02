@@ -289,19 +289,19 @@ section {
 
 @media only screen and (max-width:600px) {
     html {
-        font-size: 50%;
+        font-size: 55%;
     }
 }
 
 @media only screen and (max-width:550px) {
     html {
-        font-size: 45%;
+        font-size: 48%;
     }
 }
 
 @media only screen and (max-width:420px) {
     html {
-        font-size: 38%;
+        font-size: 40%;
     }
 }
 
