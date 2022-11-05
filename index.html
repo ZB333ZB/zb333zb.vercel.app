@@ -7,7 +7,7 @@
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&family=Roboto+Mono:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500&family=Roboto+Mono&family=Roboto+Serif:opsz,wght@8..144,600&display=swap" rel="stylesheet"> 
 
         <!-- Font Awesome icons -->
         <script src="https://kit.fontawesome.com/d704cf03f8.js" crossorigin="anonymous"></script>
@@ -15,91 +15,103 @@
         <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> adding icon to tab  -->
         <link rel="stylesheet" href="css/styles.css">
         <meta name="description" content="Here you can find all the works of Oleksandr Bereziuk aka @ZB333ZB since the beginning of his coding journey">
-        <title>@ZB333ZB's Portfolio Page</title>
+        <title>@ZB333ZB|Oleksandr Bereziuk</title>
     </head>
     <body>
-        <header id="header">
-            <!-- <img src="images/favicon.png" alt="Icon" loading="lazy" id="header-icon"> -->
-            <nav id="navbar" role="menu">
-                <ul id="navbar-links">
-                    <li>
-                        <a class="navbar-link underline-hover-effect" href="#welcome-section" role="menuitem">About</a>
-                    </li>
-                    <li>
-                        <a class="navbar-link underline-hover-effect" href="#projects" role="menuitem">My Projects</a>
-                    </li>
-                    <li>
-                        <a class="navbar-link underline-hover-effect" href="#contact" role="menuitem">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <div id="header-wrapper">
+            <header id="header">
+                <nav id="menu" role="menu">
+                    <ul id="menu-items">
+                        <li>
+                            <a class="menu-item underline-hover-effect" href="#" role="menuitem">Home</a>
+                        </li>
+                        <li>
+                            <a class="menu-item underline-hover-effect" href="#portfolio-sec" role="menuitem">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="menu-item underline-hover-effect" href="#about-sec" role="menuitem">About me</a>
+                        </li>
+                        <li>
+                            <a class="menu-item underline-hover-effect" href="#socials" role="menuitem">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
         <main id="main">
-            <section id="welcome-section">
-                <h1 id="title">@ZB333ZB</h1>
-                <h2 id="subtitle">Interested in coding</h2>
-            </section>
+            <div id="hero-wrapper">
+                <section id="hero-sec">
+                    <h1 id="hero">@ZB333ZB</h1>
+                    <h2 id="hero-subtitle">{love_coding;}</h2>
+                </section>
+            </div>
             <div id="content-wrapper">
-                <section id="projects">
-                    <div class="heading">
-                        <h2>My Projects</h2>
-                    </div>
-                    <div id="project-tiles">
-                        <a class="project-tile" href="https://codepen.io/ZB333ZB/pen/VwdeGvr" target="_blank" rel="noopener">
-                            <div class="misc">
-                                <p class="publish-date">1 NOV 2022</p>
-                            </div>
-                            <img class="project-image" src="images/survey_form_preview.png" alt="Survey Form Project" loading="lazy">
-                            <h3 class="project-name">Survey Form</h3>
-                        </a>
-                        <a href="https://codepen.io/ZB333ZB/pen/xxzZaqd" class="project-tile" target="_blank" rel="noopener">
-                            <div class="misc">
-                                <p class="publish-date">1 NOV 2022</p>
-                            </div>
-                            <img class="project-image" src="images/tribute_page_preview.png" alt="Tribute Page Project" loading="lazy">
-                            <h3 class="project-name">Tribute Page</h3>
-                        </a>
-                        <a class="project-tile" href="https://codepen.io/ZB333ZB/pen/XWYXOWe" target="_blank" rel="noopener">
-                            <div class="misc">
-                                <p class="publish-date">1 NOV 2022</p>
-                            </div>
-                            <img src="images/technical_documentation_preview.png" alt="Technical Documentation Project" class="project-image" loading="lazy">
-                            <h3 class="project-name">Technical Documentation</h3>
-                        </a>
-                        <a class="project-tile" href="https://codepen.io/ZB333ZB/pen/QWxyYbE" target="_blank" rel="noopener">
-                            <div class="misc">
-                                <p class="publish-date">1 NOV 2022</p>
-                            </div>
-                            <img src="images/landing_page_preview.png" alt="Landing Page Project" class="project-image" loading="lazy">
-                            <h3 class="project-name">Landing Page</h3>
-                        </a>
-                    </div>
-                </section>
-                <section id="contact">
-                    <h2 class="heading">How to reach me</h2>
-                    <div id="socials">
-                        <div class="social">
-                            <a href="mailto: hotelangebote_darlinghurst@simplelogin.com" target="_blank" rel="noopener"><i class="fa-regular fa-envelope"></i>Email</a>
+                <div id="content-column">
+                    <section id="portfolio-sec">
+                        <div class="heading">
+                            <h2>Portfolio</h2>
                         </div>
-                        <div class="social">
-                            <a href="https://github.com/ZB333ZB" id="profile-link" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>Github</a>
+                        <div id="projects">
+                            <a class="project" href="https://codepen.io/ZB333ZB/pen/VwdeGvr" target="_blank" rel="noopener">
+                                <div class="misc">
+                                    <p class="publish-date">1 NOV 2022</p>
+                                </div>
+                                <img class="project-image" src="images/survey_form_preview.png" alt="Survey Form Project" loading="lazy">
+                                <h3 class="subheading">Survey Form</h3>
+                            </a>
+                            <a href="https://codepen.io/ZB333ZB/pen/xxzZaqd" class="project" target="_blank" rel="noopener">
+                                <div class="misc">
+                                    <p>1 NOV 2022</p>
+                                </div>
+                                <img class="project-image" src="images/tribute_page_preview.png" alt="Tribute Page Project" loading="lazy">
+                                <h3 class="subheading">Tribute Page</h3>
+                            </a>
+                            <a class="project" href="https://codepen.io/ZB333ZB/pen/XWYXOWe" target="_blank" rel="noopener">
+                                <div class="misc">
+                                    <p>1 NOV 2022</p>
+                                </div>
+                                <img src="images/technical_documentation_preview.png" alt="Technical Documentation Project" class="project-image" loading="lazy">
+                                <h3 class="subheading">Technical Documentation</h3>
+                            </a>
+                            <a class="project" href="https://codepen.io/ZB333ZB/pen/QWxyYbE" target="_blank" rel="noopener">
+                                <div class="misc">
+                                    <p>1 NOV 2022</p>
+                                </div>
+                                <img src="images/landing_page_preview.png" alt="Landing Page Project" class="project-image" loading="lazy">
+                                <h3 class="subheading">Landing Page</h3>
+                            </a>
                         </div>
-                        <div class="social">
-                            <a href="https://t.me/ZB333ZB" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i>Telegram</a>
-                        </div>
-                        <div class="social">
-                            <a href="https://twitter.com/ZB333ZB" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i>Twitter</a>
-                        </div>
-                        <div class="social">
-                            <a href="https://codepen.io/ZB333ZB" target="_blank" rel="noopener"><i class="fa-brands fa-codepen"></i>Codepen</a>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                    <section id="about-sec">
+                        <div class="heading">About me</div>
+                        <article>
+                            <p>I am a simple full-time worker. I am open to new knowledge. Coding is my new hobby. I am an absolute beginner. The main thing is that it gives me pleasure and opportunity to develop.</p>
+                            <p>I still have no certainty in which area I want to develop most. I started my journey with the Responsive Web Design course by <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>. I have already received the certificate. I plan to continue the courses further.</p>
+                        </article>
+                    </section>
+                </div>
             </div>
         </main>
         <footer id="footer">
             <div id="copyright">
                 <p>Oleksandr Bereziuk @ZB333ZB © 2022</p>
+            </div>
+            <div id="socials">
+                <div class="social">
+                    <a href="mailto: zb333zb@pm.me" target="_blank" rel="noopener"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/ZB333ZB" id="profile-link" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="social">
+                    <a href="https://t.me/ZB333ZB" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <div class="social">
+                    <a href="https://twitter.com/ZB333ZB" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social">
+                    <a href="https://codepen.io/ZB333ZB" target="_blank" rel="noopener"><i class="fa-brands fa-codepen"></i></a>
+                </div>
             </div>
         </footer>
     </body>
