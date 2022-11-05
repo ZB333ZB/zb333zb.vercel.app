@@ -87,6 +87,8 @@
 
     --fs-hero: 9.6rem;
     --fs-hero-subtitle: 4rem;
+    --fs-hero-mobile: 4.8rem;
+    --fs-hero-subtitle-mobile: 2rem;
 }
 
 *, *::before, *::after {
@@ -132,8 +134,9 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover, .hover-effect:hover {
     color: var(--clr-link-hover);
+    cursor: pointer;
 }
 
 ul {
@@ -159,6 +162,9 @@ article > p {
     flex: 1 1 30rem;
 }
 
+label {
+    display: flex;
+}
 
 /* #region #header */
 
@@ -178,6 +184,7 @@ article > p {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding: 2rem 1rem;
 }
 
 #menu {
@@ -185,14 +192,23 @@ article > p {
     font-size: var(--fs-menu);
     font-weight: var(--fw-menu);
     text-transform: uppercase;
-    width: 60%;
-    padding: 2rem 1rem;
 }
 
 #menu-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 5rem;
+}
+
+
+/* hiding checkbox, user clicks on the associated label */
+#menu-cbx {
+    display: none;
+}
+
+.material-symbols-outlined {
+    display: none;
 }
 
 .menu-item.underline-hover-effect::before {
@@ -266,7 +282,7 @@ article > p {
     font-weight: var(--fw-regular);
     color: var(--clr-text);
     text-transform: lowercase;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.245em;
 }
 
 #content-wrapper {
@@ -366,34 +382,81 @@ article > p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 30%;
+    gap: 3rem;
+    width: 40%;
 }
 
 /* #endregion footer */
 
 /* #region @media */
 
-@media only screen and (max-width:720px) {
-    html {
-        font-size: 58%;
+@media only screen and (max-width: 42em) {
+    #header {
+        position: relative;
     }
-}
-
-@media only screen and (max-width:600px) {
-    html {
-        font-size: 55%;
+    
+    #menu {
+        padding-block: 5rem;
+        right: -100%;
+        top: 64px;
+        width: 50%;
+        position: fixed;
+        height: 100%;
+        background-color: var(--clr-bg-html);
+        transition: width 3sec ease-in-out; /* doesn't slide out properly */
+        overflow: hidden;
     }
-}
 
-@media only screen and (max-width:550px) {
-    html {
-        font-size: 48%;
+    #menu-items {
+        background: var(--gr-content);
+        flex-direction: column;
+        justify-content: flex-start;
     }
-}
 
-@media only screen and (max-width:420px) {
-    html {
-        font-size: 40%;
+    #menu-cbx:checked ~ #menu {
+        right: 0;
+    }
+
+    /* while checked make hmbrgr "hovered" */
+    #menu-cbx:checked ~ label .hover-effect {
+        color: var(--clr-link-hover);
+    }
+
+    .material-symbols-outlined {
+        display: inline-block;
+    }
+
+    #content-wrapper {
+        background-color: var(--clr-bg-html);
+    }
+
+    #content-column {
+        background: var(--gr-content);
+
+        padding-inline: 1rem;
+    }
+
+    #hero {
+        font-size: var(--fs-hero-mobile);
+    }
+
+    #hero-subtitle {
+        font-size: var(--fs-hero-subtitle-mobile);
+    }
+
+    #footer {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #copyright {
+        order: 2;
+    }
+
+    #socials {
+        order: 1;
+        width: 100%;
+        gap: unset;
     }
 }
 
