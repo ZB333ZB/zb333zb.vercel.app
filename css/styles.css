@@ -11,19 +11,6 @@
 }
 
 :root {
-    --color-text: #dee2e6;
-    --color-h: #D1D1FF;
-    --color-bg-body: #212529;
-    --color-bg-content: #30363c;
-    --color-header: #f8f9fa;
-    --color-bg-header: #343a40;
-    --color-h2: #e9ecef;
-    --color-link: #adb5bd;
-    --color-link-hover: #ced4da;
-    --color-border: #606060;
-    --color-border-hover: #999999;
-
-
     /* colors */
     --clr-contrast-light: #fff;
     --clr-contrast-dark: #000;
@@ -204,11 +191,11 @@ label {
 
 
 /* hiding checkbox, user clicks on the associated label */
-#menu-cbx {
+#menu-btn {
     display: none;
 }
 
-.material-symbols-outlined {
+#menu-btn-label {
     display: none;
 }
 
@@ -412,6 +399,8 @@ label {
     #header {
         position: relative;
     }
+
+    /* #region slide menu */
     
     #menu {
         padding-block: 5rem;
@@ -431,18 +420,76 @@ label {
         justify-content: flex-start;
     }
 
-    #menu-cbx:checked ~ #menu {
+    /* #region burger */
+
+    /* while checked make hmbrgr "hovered" */
+    #menu-btn:checked ~ #menu-btn-label .hover-effect,
+    #menu-btn:checked ~ #menu-btn-label .hover-effect::before,
+    #menu-btn:checked ~ #menu-btn-label .hover-effect::after {
+        background-color: var(--clr-link-hover);
+    }
+
+    #menu-btn-label {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+    }
+
+    #menu-btn-label:hover *, #menu-btn-label:hover *::before, #menu-btn-label:hover *::after {
+        background-color: var(--clr-link-hover);
+    }
+
+    #menu-btn_burger, #menu-btn_burger::before, #menu-btn_burger::after {
+        width: 25px;
+        height: 1.5px;
+        background-color: var(--clr-link);
+        transition: all .5s ease-in-out;
+    }
+    
+    #menu-btn_burger {
+        display: flex;
+    }
+    
+    #menu-btn_burger::before,
+    #menu-btn_burger::after {
+        content: "";
+        position: absolute;
+    }
+    
+    #menu-btn_burger::before {
+        transform: translateY(-8px);
+    }
+    
+    #menu-btn_burger:after {
+        transform: translateY(8px);
+    }
+
+    
+    #menu-btn:checked ~ #menu-btn-label #menu-btn_burger {
+        transform: translateX(-50px);
+        background: transparent;
+    }
+
+    #menu-btn:checked ~#menu-btn-label #menu-btn_burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    #menu-btn:checked ~#menu-btn-label #menu-btn_burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+
+    #menu-btn:checked ~ #menu {
         right: 0;
     }
 
-    /* while checked make hmbrgr "hovered" */
-    #menu-cbx:checked ~ label .hover-effect {
-        color: var(--clr-link-hover);
-    }
+    /* endregion burger */
 
-    .material-symbols-outlined {
-        display: inline-block;
-    }
+    /* #endregion slide menu */
 
     #content-wrapper {
         background-color: var(--clr-bg-html);
