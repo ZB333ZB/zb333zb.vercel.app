@@ -254,17 +254,18 @@ label {
 
 #hero {
     font-family: var(--ff-hero);
-    font-size: var(--fs-hero);
+    font-size: clamp(var(--fs-hero-mobile), 15vw, var(--fs-hero));
     font-weight: var(--fw-hero);
     background: var(--gr-hero);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 #hero-subtitle {
     font-family: var(--ff-hero-subtitle);
-    font-size: var(--fs-hero-subtitle);
+    font-size: clamp(var(--fs-hero-subtitle-mobile), 5vw, var(--fs-hero-subtitle));
     font-weight: var(--fw-regular);
     color: var(--clr-text);
     text-transform: lowercase;
@@ -502,14 +503,6 @@ label {
         background: var(--gr-content);
 
         padding-inline: 1rem;
-    }
-
-    #hero {
-        font-size: var(--fs-hero-mobile);
-    }
-
-    #hero-subtitle {
-        font-size: var(--fs-hero-subtitle-mobile);
     }
 
     #socials {
