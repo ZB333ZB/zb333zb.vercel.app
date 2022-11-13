@@ -450,7 +450,7 @@ label {
     #menu-btn_burger::before,
     #menu-btn_burger::after {
         width: 25px;
-        height: 1.5px;
+        height: 2px;
         background-color: var(--clr-link);
         transition: all .2s ease-in-out;
     }
