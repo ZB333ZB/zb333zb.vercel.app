@@ -246,6 +246,7 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-inline: 2rem;
 }
 
 #hero-sec {
