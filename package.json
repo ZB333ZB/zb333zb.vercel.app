@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@next/font": "^13.0.6",
+    "@reduxjs/toolkit": "^1.9.1",
+    "hover.css": "^2.3.2",
+    "next": "latest",
+    "next-redux-wrapper": "^8.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
