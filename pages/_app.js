@@ -1,4 +1,3 @@
-import Script from 'next/script'
 import { Provider } from "react-redux"
 import { store } from '/redux/store'
 import '/shared/styles/globals.css'
