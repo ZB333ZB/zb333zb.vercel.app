@@ -7,12 +7,17 @@ import surveyFormPreview from '../public/images/survey_form_preview.png'
 import technicalDocumentationPreview from '../public/images/technical_documentation_preview.png'
 import tributePagePreview from '../public/images/tribute_page_preview.png'
 
+//icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faGithub, faTelegram, faTwitter, faCodepen } from '@fortawesome/free-brands-svg-icons';
+
 export default function Home() {
   return (
     <>
       <Head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description"
           content="Here you can find all the works of Oleksandr Bereziuk aka @ZB333ZB since the beginning of his coding journey" />
@@ -108,24 +113,25 @@ export default function Home() {
               <div className="heading">How to reach me</div>
               <div id="socials">
                 <a href="mailto: zb333zb@pm.me" className="social" target="_blank" rel="noopener">
-                  <i className="fa-regular fa-envelope"></i>
+                  {/* <i className="fa-regular fa-envelope"></i> */}
+                  <FontAwesomeIcon icon={faEnvelope} />
                   <h3 className="subheading">Email</h3>
                 </a>
                 <a href="https://github.com/ZB333ZB" className="social" id="profile-link" target="_blank"
                   rel="noopener">
-                  <i className="fa-brands fa-github"></i>
+                  <FontAwesomeIcon icon={faGithub} />
                   <h3 className="subheading">Github</h3>
                 </a>
                 <a href="https://t.me/ZB333ZB" className="social" target="_blank" rel="noopener">
-                  <i className="fa-brands fa-telegram"></i>
+                  <FontAwesomeIcon icon={faTelegram} />
                   <h3 className="subheading">Telegram</h3>
                 </a>
                 <a href="https://twitter.com/ZB333ZB" className="social" target="_blank" rel="noopener">
-                  <i className="fa-brands fa-twitter"></i>
+                  <FontAwesomeIcon icon={faTwitter} />
                   <h3 className="subheading">Twitter</h3>
                 </a>
                 <a href="https://codepen.io/ZB333ZB" className="social" target="_blank" rel="noopener">
-                  <i className="fa-brands fa-codepen"></i>
+                  <FontAwesomeIcon icon={faCodepen} />
                   <h3 className="subheading">Codepen</h3>
                 </a>
               </div>
@@ -139,23 +145,29 @@ export default function Home() {
         </div>
         <div id="socials-footer">
           <div className="social-footer">
-            <a href="mailto: zb333zb@pm.me" target="_blank" rel="noopener"><i
-              className="fa-regular fa-envelope"></i></a>
+            <a href="mailto: zb333zb@pm.me" target="_blank" rel="noopener">
+              <FontAwesomeIcon icon={faEnvelope} />
+            </a>
           </div>
           <div className="social-footer">
-            <a href="https://github.com/ZB333ZB" id="profile-link" target="_blank" rel="noopener"><i
-              className="fa-brands fa-github"></i></a>
+            <a href="https://github.com/ZB333ZB" id="profile-link" target="_blank" rel="noopener">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
           </div>
           <div className="social-footer">
-            <a href="https://t.me/ZB333ZB" target="_blank" rel="noopener"><i className="fa-brands fa-telegram"></i></a>
+            <a href="https://t.me/ZB333ZB" target="_blank" rel="noopener">
+              <FontAwesomeIcon icon={faTelegram} />
+            </a>
           </div>
           <div className="social-footer">
-            <a href="https://twitter.com/ZB333ZB" target="_blank" rel="noopener"><i
-              className="fa-brands fa-twitter"></i></a>
+            <a href="https://twitter.com/ZB333ZB" target="_blank" rel="noopener">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
           </div>
           <div className="social-footer">
-            <a href="https://codepen.io/ZB333ZB" target="_blank" rel="noopener"><i
-              className="fa-brands fa-codepen"></i></a>
+            <a href="https://codepen.io/ZB333ZB" target="_blank" rel="noopener">
+              <FontAwesomeIcon icon={faCodepen} />
+            </a>
           </div>
         </div>
       </footer>

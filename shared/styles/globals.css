@@ -4,6 +4,30 @@
   }
 }
 
+/* #region @FONT-FACE */
+
+@font-face {
+  font-family: "Roboto Flex";
+  src: url("../fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Serif";
+  src: url("../fonts/Roboto_Serif/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Righteous";
+  src: url("../fonts/Righteous/Righteous-Regular.ttf");
+}
+
+/* #endregion @FONT-FACE */
+
 :root {
   /* #region COLORS*/
 
@@ -42,6 +66,8 @@
   /* #endregion COLORS*/
 
   /* #region FAMILIES*/
+
+
   --ff-primary: "Roboto Flex", sans-serif;
   --ff-heading: "Roboto Serif", serif;
 
