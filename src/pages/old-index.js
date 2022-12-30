@@ -2,10 +2,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 // images
-import landingPagePreview from '../public/images/landing_page_preview.png'
-import surveyFormPreview from '../public/images/survey_form_preview.png'
-import technicalDocumentationPreview from '../public/images/technical_documentation_preview.png'
-import tributePagePreview from '../public/images/tribute_page_preview.png'
+import landingPagePreview from '/public/images/landing_page_preview.png'
+import surveyFormPreview from '/public/images/survey_form_preview.png'
+import technicalDocumentationPreview from '/public/images/technical_documentation_preview.png'
+import tributePagePreview from '/public/images/tribute_page_preview.png'
 
 //icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
