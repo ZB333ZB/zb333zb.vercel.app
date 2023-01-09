@@ -187,12 +187,24 @@ export const PAGES = {
     name: "Counter",
     href: "/projects/counter",
     title: "Tally Counter - @ZB333ZB",
-    description: "Tally Counter Project by @ZB333ZB aka Oleksandr Bereziuk",
+    description: "Tally Counter Project by Oleksandr Bereziuk",
   },
   about: {
     name: "About",
     href: "/about",
     title: "About me - @ZB333ZB",
-    description: "'About me' page of Oleksandr Bereziuk aka @ZB333ZB",
+    description: "About Oleksandr Bereziuk",
+  },
+  contact: {
+    name: "Contact",
+    href: "/contact",
+    title: "Contact me - @ZB333ZB",
+    description: "Contact Oleksandr Bereziuk",
+  },
+  portfolio: {
+    name: "Portfolio",
+    href: "/portfolio",
+    title: "Portfolio - @ZB333ZB",
+    description: "Portfolio of Oleksandr Bereziuk",
   },
 };

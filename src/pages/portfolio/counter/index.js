@@ -26,7 +26,7 @@ import Header from "../../../comps/Header";
 import Counter from "../../../comps/Counter/Counter";
 import { PAGES } from "../../../shared/CONSTS";
 
-export default function CounterProject() {
+export default function CountePage() {
   return (
     <>
       <div
