@@ -3,14 +3,17 @@ import landingPagePreview from "/public/images/landing_page_preview.png";
 import surveyFormPreview from "/public/images/survey_form_preview.png";
 import technicalDocumentationPreview from "/public/images/technical_documentation_preview.png";
 import tributePagePreview from "/public/images/tribute_page_preview.png";
+import tallyCounterPreview from "/public/images/tally_counter_preview.png";
 
 //icons
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faTelegram,
   faTwitter,
   faCodepen,
+  faHtml5,
+  faCss3,
 } from "@fortawesome/free-brands-svg-icons";
 
 export const CONTACTS = [
@@ -41,13 +44,54 @@ export const CONTACTS = [
   },
 ];
 
+export const ICON_TYPES = {
+  fortawesome: "fortawesome",
+  svg: "svg",
+};
+
+export const SVG_ICONS_NAMES = {
+  nextJS: "nextJS",
+  tailwindCSS: "tailwindCSS",
+};
+
 export const PROJECTS = [
+  {
+    href: "/projects/counter",
+    image: tallyCounterPreview,
+    alt: "Tally Counter Project",
+    name: "Tally Counter",
+    date: "7 JAN 2023",
+    icons: [
+      {
+        name: "Next.js",
+        type: ICON_TYPES.svg,
+        icon: SVG_ICONS_NAMES.nextJS,
+      },
+      {
+        name: "Tailwind CSS",
+        type: ICON_TYPES.svg,
+        icon: SVG_ICONS_NAMES.tailwindCSS,
+      },
+    ],
+  },
   {
     href: "https://codepen.io/ZB333ZB/pen/VwdeGvr",
     image: surveyFormPreview,
     alt: "Survey Form Project",
     name: "Survey Form",
     date: "1 NOV 2022",
+    icons: [
+      {
+        name: "HTML5",
+        type: ICON_TYPES.fortawesome,
+        icon: faHtml5,
+      },
+      {
+        name: "CSS3",
+        type: ICON_TYPES.fortawesome,
+        icon: faCss3,
+      },
+    ],
   },
   {
     href: "https://codepen.io/ZB333ZB/pen/xxzZaqd",
@@ -55,6 +99,18 @@ export const PROJECTS = [
     alt: "Tribute Page Project",
     name: "Tribute Page",
     date: "1 NOV 2022",
+    icons: [
+      {
+        name: "HTML5",
+        type: ICON_TYPES.fortawesome,
+        icon: faHtml5,
+      },
+      {
+        name: "CSS3",
+        type: ICON_TYPES.fortawesome,
+        icon: faCss3,
+      },
+    ],
   },
   {
     href: "https://codepen.io/ZB333ZB/pen/XWYXOWe",
@@ -62,6 +118,18 @@ export const PROJECTS = [
     alt: "Technical Documentation Project",
     name: "Technical Documentation",
     date: "1 NOV 2022",
+    icons: [
+      {
+        name: "HTML5",
+        type: ICON_TYPES.fortawesome,
+        icon: faHtml5,
+      },
+      {
+        name: "CSS3",
+        type: ICON_TYPES.fortawesome,
+        icon: faCss3,
+      },
+    ],
   },
   {
     href: "https://codepen.io/ZB333ZB/pen/QWxyYbE",
@@ -69,24 +137,62 @@ export const PROJECTS = [
     alt: "Landing Page Project",
     name: "Landing Page",
     date: "1 NOV 2022",
+    icons: [
+      {
+        name: "HTML5",
+        type: ICON_TYPES.fortawesome,
+        icon: faHtml5,
+      },
+      {
+        name: "CSS3",
+        type: ICON_TYPES.fortawesome,
+        icon: faCss3,
+      },
+    ],
   },
 ];
 
 export const MENU_ITEMS = [
   {
     name: "Home",
-    href: "#",
+    //if isHomePage is true, it scrolls up to the top of the page
+    href: "/",
   },
   {
     name: "Portfolio",
-    href: "#portfolio-sec",
+    hrefOnHome: "/#portfolio-sec",
+    href: "/portfolio",
   },
   {
     name: "About me",
-    href: "#about-sec",
+    hrefOnHome: "/#about-sec",
+    href: "/about",
   },
   {
     name: "Contact",
-    href: "#contact-sec",
+    hrefOnHome: "/#contact-sec",
+    href: "/contact",
   },
 ];
+
+export const PAGES = {
+  home: {
+    name: "Home",
+    href: "/",
+    title: "@ZB333ZB - Oleksandr Bereziuk",
+    description:
+      "Here you can find all the works of Oleksandr Bereziuk aka @ZB333ZB since the beginning of his coding journey",
+  },
+  counter: {
+    name: "Counter",
+    href: "/projects/counter",
+    title: "Tally Counter - @ZB333ZB",
+    description: "Tally Counter Project by @ZB333ZB aka Oleksandr Bereziuk",
+  },
+  about: {
+    name: "About",
+    href: "/about",
+    title: "About me - @ZB333ZB",
+    description: "'About me' page of Oleksandr Bereziuk aka @ZB333ZB",
+  },
+};
